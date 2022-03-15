@@ -22,7 +22,7 @@ def guess_number():
         
     else:
         print("You got it! Congrats!!")
-        
+        print("yaaaaaaaay!!!")
     
     
     
