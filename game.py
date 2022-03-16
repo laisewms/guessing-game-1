@@ -2,8 +2,28 @@
 
 # Put your code here
 import random
-def guess_number():
 
+instructions = """
+  (X)Play a Game
+  (Q)Quit game
+  """
+def play_again():
+
+    while True:
+        print(instructions)
+        choice = input('> ')
+        choice.lower()
+
+        if choice == 'x':
+            print(guess_number())
+        elif choice == 'q':
+            print('see you')
+
+        else: 
+            print(f'{choice} is not an option')
+
+def guess_number():
+    
     # greet player
     print('Welcome to the guessing game!')
 # get player name
@@ -31,13 +51,13 @@ def guess_number():
             print("The number is too LOW!")
         
     else:
-            print("You got it! Congrats!!")
-            print("yaaaaaaaay!!!")
-            print(f"You had {count_guesses} tries.")
-    
-    
-    
+        print("You got it! Congrats!!")
+        print("yaaaaaaaay!!!")
+        print(f"You had {count_guesses} tries.")
+        print(play_again())
 
-       
 
 guess_number()
+
+
+
