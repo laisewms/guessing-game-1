@@ -4,8 +4,8 @@
 import random
 
 instructions = """
-  (X)Play a Game
-  (Q)Quit game
+  (X)Play The Game
+  (Q)Quit The Game
   """
 def play_again():
 
